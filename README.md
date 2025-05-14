@@ -1,6 +1,12 @@
 # Conch: Voice-Controlled Terminal Interface
 
-Conch is a voice-controlled terminal interface that lets users seamlessly switch between typing and speaking to interact with their shell. The application uses SDL2 for real-time audio capture, whisper.cpp for accurate speech-to-text transcription, and Bubbletea for a responsive terminal UI.
+Conch is a voice-controlled terminal interface that lets users switch between typing and speaking to interact with their shell. The application uses SDL2 for real-time audio capture, whisper.cpp for accurate speech-to-text transcription, and Bubbletea for a responsive terminal UI.
+
+You run the binary in one shell window `./conch` 
+It starts recording when you speak, and sends it to a whisper.cpp server it spins up locally
+in the `conch` shell hitting enter will put the transcription into your paste buffer. 
+
+Then `CMD+v` your transcription wherever you want.
 
 ![Conch Architecture](conch.png)
 
@@ -10,6 +16,8 @@ Conch is a voice-controlled terminal interface that lets users seamlessly switch
 
 - Go 1.20 or higher
 - SDL2 library installed on your system
+
+Install whisper.cpp https://github.com/ggml-org/whisper.cpp
 
 ### Build
 
