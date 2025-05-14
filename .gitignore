@@ -1,0 +1,46 @@
+# Binary
+/conch
+/test_audio
+bin/
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/vendor/
+go.work
+
+# Build and dependency directories
+/dist/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Whisper model files (can be large)
+*.bin
+models/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+recording_1.wav
